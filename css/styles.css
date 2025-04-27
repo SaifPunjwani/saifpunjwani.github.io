@@ -1,8 +1,11 @@
 :root {
-    --primary-color: #0366d6;
-    --text-color: #24292e;
-    --light-gray: #f6f8fa;
-    --border-color: #e1e4e8;
+    --primary-color: #4065a9;
+    --text-color: #222222;
+    --text-light: #666666;
+    --link-color: #4065a9;
+    --border-color: #e5e5e5;
+    --bg-color: #ffffff;
+    --code-color: #f5f5f5;
 }
 
 * {
@@ -12,19 +15,18 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    line-height: 1.6;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
     color: var(--text-color);
-}
-
-.container {
-    max-width: 900px;
+    background-color: var(--bg-color);
+    max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 40px 20px;
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--link-color);
     text-decoration: none;
 }
 
@@ -32,50 +34,76 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Navigation */
-header {
-    background-color: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.25;
 }
 
-.nav-content {
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-top: 2.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+p, ul, ol, dl {
+    margin-bottom: 1.25rem;
+}
+
+ul, ol {
+    padding-left: 1.5rem;
+}
+
+/* Header and Nav */
+header {
+    margin-bottom: 2rem;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
-}
-
-.logo a {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--text-color);
-}
-
-.logo a:hover {
-    text-decoration: none;
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .nav-links {
     display: flex;
     list-style: none;
+    gap: 1.5rem;
 }
 
-.nav-links li {
-    margin-left: 20px;
+.nav-links a {
+    color: var(--text-color);
+    font-weight: 600;
 }
 
-/* Profile Section */
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--link-color);
+}
+
+/* Profile */
 .profile {
     display: flex;
     align-items: center;
-    margin: 50px 0 30px;
+    margin-bottom: 2rem;
 }
 
 .profile-image {
-    margin-right: 30px;
+    margin-right: 2rem;
 }
 
 .profile-image img {
@@ -86,88 +114,114 @@ header {
 }
 
 .profile-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 .subtitle {
-    font-size: 1.2rem;
-    color: #586069;
-    margin-bottom: 15px;
+    font-size: 1.25rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
 }
 
+/* Social Links */
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .social-links a {
-    font-size: 18px;
+    color: var(--text-light);
+    font-size: 1.25rem;
+}
+
+.social-links a:hover {
+    color: var(--link-color);
 }
 
 /* Sections */
-.section {
-    margin: 60px 0;
-}
-
-h2 {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--border-color);
+section {
+    margin-bottom: 3rem;
 }
 
 /* Experience */
 .experience-item {
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
 }
 
 .experience-item h3 {
-    margin-bottom: 5px;
+    margin-bottom: 0.25rem;
+    margin-top: 1rem;
 }
 
 .company {
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 0.25rem;
 }
 
 .date {
-    color: #586069;
-    margin-bottom: 10px;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-style: italic;
 }
 
-.responsibilities {
-    margin-left: 20px;
+/* Publications */
+.publications {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.publication-item {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1.5rem;
+}
+
+.publication-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.publication-authors {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.publication-venue {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.publication-links a {
+    margin-right: 1rem;
+    font-size: 0.9rem;
 }
 
 /* Footer */
 footer {
-    background-color: var(--light-gray);
-    padding: 20px 0;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-light);
+    font-size: 0.9rem;
     text-align: center;
-    margin-top: 50px;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     .profile {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .profile-image {
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 1.5rem;
     }
-    
-    .nav-content {
+
+    nav {
         flex-direction: column;
-    }
-    
-    .nav-links {
-        margin-top: 15px;
-    }
-    
-    .nav-links li:first-child {
-        margin-left: 0;
+        gap: 1rem;
     }
 }
