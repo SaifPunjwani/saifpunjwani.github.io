@@ -1,86 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saif Punjwani</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saif Punjwani • Software Engineer</title>
+  <meta name="description" content="Personal site of Saif Punjwani — software engineer. Projects, experience, and ways to get in touch.">
+  <meta name="author" content="Saif Punjwani">
+  <meta property="og:title" content="Saif Punjwani">
+  <meta property="og:description" content="Software engineer. Projects, experience, contact.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://saifpunjwani.github.io/">
+  <meta property="og:image" content="images/IMG_0154.JPG">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Saif Punjwani">
+  <meta name="twitter:description" content="Software engineer. Projects, experience, contact.">
+  <meta name="twitter:image" content="images/IMG_0154.JPG">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="/favicon.ico">
 </head>
 <body>
-    <header>
-        <nav>
-            <h3 class="logo">Saif Punjwani</h3>
-            <ul class="nav-links">
-                <li><a href="#about">about</a></li>
-                <li><a href="#projects">projects</a></li>
-            </ul>
-        </nav>
+  <div class="container">
+    <!-- Navigation -->
+    <header class="site-header">
+      <nav class="navbar">
+        <a class="navbar-brand" href="#top">Saif Punjwani</a>
+        <ul class="navbar-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+      </nav>
     </header>
 
-    <main>
-        <section id="profile">
-            <div class="profile">
-                <div class="profile-image">
-                    <img src="images/IMG_0154.JPG" alt="Saif Punjwani">
-                </div>
-                <div class="profile-content">
-                    <h1>Saif Punjwani</h1>
-                    <p class="subtitle">Software Engineer | Technology Enthusiast</p>
-                    <div class="social-links">
-                        <a href="https://github.com/SaifPunjwani" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/saif-punjwani" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:saifpunjwani1230@gmail.com"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <p>
-                Hello! I'm Saif Punjwani. I'm passionate about technology and software development. Welcome to my personal website where I showcase my projects and professional journey.
-            </p>
-        </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                I'm Saif Punjwani, a technology enthusiast and software developer. I'm constantly exploring new technologies and working on exciting projects. My interests include web development, software engineering, and creating innovative solutions.
-            </p>
-            <p>
-                I enjoy collaborating on challenging projects and am always looking to expand my skills and knowledge in the tech space.
-            </p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="publications">
-                <div class="publication-item">
-                    <div class="publication-title">Personal Website</div>
-                    <div class="publication-authors">HTML, CSS, JavaScript</div>
-                    <div class="publication-venue">2024</div>
-                    <p>A personal portfolio website to showcase my projects and professional background.</p>
-                    <div class="publication-links">
-                        <a href="https://github.com/SaifPunjwani/saifpunjwani.github.io" target="_blank">GitHub</a>
-                    </div>
-                </div>
-                
-                <!-- Add more projects as they become available -->
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>
-                Feel free to reach out to me at <a href="mailto:saifpunjwani1230@gmail.com">saifpunjwani1230@gmail.com</a> or connect with me on <a href="https://linkedin.com/in/saif-punjwani" target="_blank">LinkedIn</a>.
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Saif Punjwani. All rights reserved.</p>
+    <!-- Hero / Profile -->
+    <section id="top" class="hero">
+      <img src="images/IMG_0154.JPG" class="profile-img" alt="Portrait of Saif Punjwani">
+      <div class="hero-content">
+        <h1 class="profile-name">Saif Punjwani</h1>
+        <p class="profile-desc">Software engineer focused on building simple, reliable products.</p>
+        <div class="profile-links">
+          <a href="https://github.com/SaifPunjwani" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/saif-punjwani" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:saifpunjwani1230@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="files/Saif-Punjwani-Resume.pdf" target="_blank" aria-label="Resume"><i class="fas fa-file-alt"></i></a>
         </div>
-    </footer>
+      </div>
+    </section>
 
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I enjoy turning ideas into software that ships. I care about clean systems, good DX, and crisp interfaces. My recent work spans web apps, APIs, and small tools that remove friction.
+      </p>
+      <p>
+        Outside of work, I explore new stacks and tinker with side projects. If you like thoughtful, pragmatic engineering, we’ll get along.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-meta">Year — Present</div>
+          <div class="timeline-content">
+            <h3 class="item-title">Role @ Company</h3>
+            <p class="item-desc">Brief impact statement. Shipped X, improved Y, delivered Z.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">Year — Year</div>
+          <div class="timeline-content">
+            <h3 class="item-title">Previous Role @ Company</h3>
+            <p class="item-desc">Key contributions and scope. Tech used, systems owned.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <div class="project-main">
+            <h3 class="project-title"><a href="https://github.com/SaifPunjwani/weight-of-thought" target="_blank">Weight-of-Thought</a></h3>
+            <p class="project-desc">Exploring neural network weights for enhanced LLM reasoning.</p>
+          </div>
+          <div class="project-meta">
+            <span class="tag">Python</span>
+            <span class="tag">LLMs</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-main">
+            <h3 class="project-title"><a href="https://github.com/SaifPunjwani/Reasoning-Research" target="_blank">Reasoning Research</a></h3>
+            <p class="project-desc">Looking into reasoning abilities across deep learning and NLP.</p>
+          </div>
+          <div class="project-meta">
+            <span class="tag">Python</span>
+            <span class="tag">Research</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-main">
+            <h3 class="project-title"><a href="https://github.com/SaifPunjwani/Checkers-Calculator" target="_blank">Checkers Calculator</a></h3>
+            <p class="project-desc">Alpha-beta pruning to evaluate next moves in checkers.</p>
+          </div>
+          <div class="project-meta">
+            <span class="tag">Python</span>
+            <span class="tag">Algorithms</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-main">
+            <h3 class="project-title"><a href="https://github.com/SaifPunjwani/saifpunjwani.github.io" target="_blank">Personal Site</a></h3>
+            <p class="project-desc">This site. Fast, minimal, accessible, and easy to extend.</p>
+          </div>
+          <div class="project-meta">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JS</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Best way to reach me is email: <a href="mailto:saifpunjwani1230@gmail.com">saifpunjwani1230@gmail.com</a>.</p>
+      <p>For more about my work, see <a href="https://github.com/SaifPunjwani" target="_blank">GitHub</a> or <a href="https://linkedin.com/in/saif-punjwani" target="_blank">LinkedIn</a>.</p>
+    </section>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Saif Punjwani</p>
+    </footer>
+  </div>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Saif Punjwani",
+    "image": "images/IMG_0154.JPG",
+    "url": "https://saifpunjwani.github.io/",
+    "sameAs": [
+      "https://github.com/SaifPunjwani",
+      "https://www.linkedin.com/in/saif-punjwani"
+    ],
+    "jobTitle": "Software Engineer"
+  }
+  </script>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
