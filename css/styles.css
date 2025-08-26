@@ -51,6 +51,8 @@ a:hover { color: var(--accent-ink); text-decoration: underline; }
 .navbar-nav a.active { color: var(--accent); }
 .theme-toggle { border: 1px solid var(--border); background: var(--card); color: var(--text); padding: 8px 10px; border-radius: 8px; cursor: pointer; }
 .theme-toggle:hover { border-color: var(--accent); }
+/* Hide navbar when not used */
+.site-header, .navbar { display: none; }
 
 /* Hero */
 .hero { display: grid; grid-template-columns: 140px 1fr; gap: 24px; align-items: center; padding: 28px 0 8px; }
@@ -128,3 +130,7 @@ p { margin: 10px 0; }
 .pub > a { display: inline-block; padding: 6px 10px; border-radius: 10px; font-weight: 700; }
 .pub .author { margin: 6px 0 0; color: var(--muted); font-size: .95rem; }
 .eq-note { font-size: .9rem; color: var(--muted); }
+
+/* Modal banner like reference */
+.modal { border: 1px solid var(--border); background: var(--card); border-radius: 12px; padding: 10px 12px; margin: 12px 0 18px; }
+.modal-green { background: #ecfdf5; border-color: #a7f3d0; color: #065f46; }
