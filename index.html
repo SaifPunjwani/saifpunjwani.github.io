@@ -42,24 +42,34 @@
       </nav>
     </header>
 
-    <!-- Hero / Profile -->
-    <section id="top" class="hero">
-      <img src="images/IMG_0154.JPG" class="profile-img" alt="Portrait of Saif Punjwani">
-      <div class="hero-content">
-        <h1 class="profile-name">Saif Punjwani</h1>
-        <p class="profile-desc">Software engineer focused on building simple, reliable products.</p>
-        <div class="profile-links">
-          <a href="https://github.com/SaifPunjwani" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/saifpunjwani/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="mailto:saifpunjwani1230@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          <a href="files/Saif-Punjwani-Resume.pdf" target="_blank" aria-label="Resume"><i class="fas fa-file-alt"></i></a>
-        </div>
+    <!-- Header row (reference-inspired) -->
+    <div class="header-row">
+      <div class="profile" id="profile">
+        <a href="#top">
+          <div id="profile-img-container" class="profile-img-container">
+            <div id="spinner" class="spinner"></div>
+            <div id="profile-img" class="profile-img" style="background-image:url('images/IMG_0154.JPG')"></div>
+          </div>
+        </a>
       </div>
-    </section>
+      <div class="top-desc">
+        <h5 class="header">Saif Punjwani</h5>
+        <h2 class="name"><strong>Hey! I'm <span class="saif-accent">Saif</span> 👋</strong></h2>
+        <h4 class="tagline"><strong>Incoming M.S./Ph.D. @ Columbia • LLM reasoning • Multimodal agents • Systems</strong></h4>
+      </div>
+    </div>
+    <div class="row links">
+      <a class="label-red" href="mailto:saifpunjwani1230@gmail.com?subject=Hello Saif">email</a>
+      <a class="label-orange" href="files/Saif-Punjwani-Resume.pdf" target="_blank">resume</a>
+      <a class="label-scholar" href="https://scholar.google.com/scholar?q=Saif+Punjwani" target="_blank">scholar</a>
+      <a class="label-black" href="https://github.com/SaifPunjwani" target="_blank">github</a>
+      <a class="label-linkedin" href="https://www.linkedin.com/in/saifpunjwani/" target="_blank">linkedin</a>
+    </div>
 
     <!-- About -->
     <section id="about" class="section">
-      <h2>About</h2>
+      <hr>
+      <h5 class="title">Research interests</h5>
       <p>
         Incoming M.S./Ph.D. in Computer Science at Columbia University. Previously, Joint BS/MS in CS at Georgia Tech (4.0/4.0). I work on reasoning in language models, multimodal agents, and practical systems that ship.
       </p>
@@ -70,7 +80,8 @@
 
     <!-- Now -->
     <section id="now" class="section">
-      <h2>Now</h2>
+      <hr>
+      <h5 class="title">Now</h5>
       <ul>
         <li>Researching Weight‑of‑Thought reasoning and multi‑step inference for LLMs.</li>
         <li>Preparing for Columbia M.S./Ph.D.; exploring research collaborations in NYC.</li>
@@ -80,7 +91,8 @@
 
     <!-- Experience -->
     <section id="experience" class="section">
-      <h2>Experience</h2>
+      <hr>
+      <h5 class="title">Experience</h5>
       <ul class="timeline">
         <li class="timeline-item">
           <div class="timeline-meta">May 2025 — Aug 2025</div>
@@ -129,7 +141,8 @@
 
     <!-- Education -->
     <section id="education" class="section">
-      <h2>Education</h2>
+      <hr>
+      <h5 class="title">Education</h5>
       <ul class="timeline">
         <li class="timeline-item">
           <div class="timeline-meta">Aug 2025 — May 2029 (Expected)</div>
@@ -150,7 +163,8 @@
 
     <!-- Projects -->
     <section id="highlights" class="section">
-      <h2>Highlights</h2>
+      <hr>
+      <h5 class="title">Highlights</h5>
       <div class="projects">
         <article class="project">
           <div class="project-main">
@@ -217,35 +231,27 @@
 
     <!-- Publications -->
     <section id="publications" class="section">
-      <h2>Publications</h2>
-      <div class="projects">
-        <article class="project">
-          <div class="project-main">
-            <h3 class="project-title">Weight‑of‑Thought Reasoning (2025)</h3>
-            <p class="project-desc">Exploring neural network weights for enhanced LLM reasoning. arXiv:2504.10646.</p>
-          </div>
-          <div class="project-meta"><span class="tag">arXiv</span></div>
-        </article>
-        <article class="project">
-          <div class="project-main">
-            <h3 class="project-title">Large Body Language Models (2024)</h3>
-            <p class="project-desc">LBLMs for gesture generation; ACL proceedings. arXiv:2410.16533.</p>
-          </div>
-          <div class="project-meta"><span class="tag">ACL</span></div>
-        </article>
-        <article class="project">
-          <div class="project-main">
-            <h3 class="project-title">Allo‑AVA (2024)</h3>
-            <p class="project-desc">Large‑scale multimodal dataset for allocentric avatar gesture animation. arXiv:2410.16503.</p>
-          </div>
-          <div class="project-meta"><span class="tag">Dataset</span></div>
-        </article>
-      </div>
+      <hr>
+      <h5 class="title">Publications & Preprints ✒️</h5>
+      <p class="pub">
+        <a class="label-green" href="https://arxiv.org/abs/2504.10646" target="_blank">Weight‑of‑Thought Reasoning: Exploring Neural Network Weights for Enhanced LLM Reasoning</a>
+        <p class="author"><b>Saif Punjwani</b>, Larry Heck — preprint, 2025</p>
+      </p>
+      <p class="pub">
+        <a class="label-pink" href="https://arxiv.org/abs/2410.16533" target="_blank">Large Body Language Models</a>
+        <p class="author"><b>Saif Punjwani</b>, Larry Heck — 2024</p>
+      </p>
+      <p class="pub">
+        <a class="label-blue" href="https://arxiv.org/abs/2410.16503" target="_blank">Allo‑AVA: A Large‑Scale Multimodal Conversational AI Dataset for Allocentric Avatar Gesture Animation</a>
+        <p class="author"><b>Saif Punjwani</b>, Larry Heck — 2024</p>
+      </p>
+      <p class="eq-note grey"><i>* If you have a preferred ordering or more entries, I can update.</i></p>
     </section>
 
     <!-- Teaching -->
     <section id="teaching" class="section">
-      <h2>Teaching</h2>
+      <hr>
+      <h5 class="title">Teaching</h5>
       <ul class="timeline">
         <li class="timeline-item">
           <div class="timeline-meta">Sep 2024 — Dec 2024</div>
@@ -266,7 +272,8 @@
 
     <!-- Honors -->
     <section id="honors" class="section">
-      <h2>Honors</h2>
+      <hr>
+      <h5 class="title">Honors</h5>
       <ul>
         <li>Georgia Tech Joint BS/MS in CS — GPA 4.0/4.0.</li>
         <li>Publications spanning ACL proceedings and arXiv (2024–2025).</li>
@@ -276,7 +283,8 @@
 
     <!-- Contact -->
     <section id="contact" class="section">
-      <h2>Contact</h2>
+      <hr>
+      <h5 class="title">Contact</h5>
       <p>Best way to reach me is email: <a href="mailto:saifpunjwani1230@gmail.com">saifpunjwani1230@gmail.com</a>.</p>
       <p>For more about my work, see <a href="https://github.com/SaifPunjwani" target="_blank">GitHub</a> or <a href="https://linkedin.com/in/saif-punjwani" target="_blank">LinkedIn</a>.</p>
     </section>
