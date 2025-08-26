@@ -61,4 +61,10 @@ document.addEventListener('DOMContentLoaded', function() {
   // Footer year
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Hide header spinner once assets load
+  window.addEventListener('load', () => {
+    const spinner = document.getElementById('spinner');
+    if (spinner) spinner.style.display = 'none';
+  });
 });
