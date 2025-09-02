@@ -76,7 +76,7 @@ p { margin: 10px 0; }
 .item-desc { margin: 0; color: var(--muted); }
 /* Logos + headers inside timeline items */
 .item-header { display: flex; align-items: center; gap: 10px; margin: 0 0 4px; }
-.timeline-logo { width: 28px; height: 28px; border-radius: 6px; border: 1px solid var(--border); object-fit: contain; background: var(--card); }
+.timeline-logo { width: 22px; height: 22px; border-radius: 4px; object-fit: contain; filter: grayscale(100%) contrast(0.9); opacity: 0.85; mix-blend-mode: multiply; }
 .item-company { color: var(--muted); font-weight: 600; }
 
 /* Projects */
