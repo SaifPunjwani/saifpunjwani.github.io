@@ -74,6 +74,10 @@ p { margin: 10px 0; }
 .timeline-meta { color: var(--muted); font-variant-numeric: tabular-nums; }
 .item-title { margin: 0 0 4px; font-size: 1.05rem; }
 .item-desc { margin: 0; color: var(--muted); }
+/* Logos + headers inside timeline items */
+.item-header { display: flex; align-items: center; gap: 10px; margin: 0 0 4px; }
+.timeline-logo { width: 28px; height: 28px; border-radius: 6px; border: 1px solid var(--border); object-fit: contain; background: var(--card); }
+.item-company { color: var(--muted); font-weight: 600; }
 
 /* Projects */
 .projects { display: grid; gap: 12px; }
